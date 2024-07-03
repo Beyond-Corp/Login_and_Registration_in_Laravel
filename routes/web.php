@@ -15,11 +15,16 @@ use App\Http\Controllers\Auth\AuthController;
 */
 
 
-Route::middleware('auth')->group(function(){
-    Route::get('/', function () {
-        return view('welcome');
-    })->name('home');    
+
+Route::middleware('auth')->group(function () {
+    Route::view('/', 'welcome')->name('home');
 });
+
+
+
+// Route::get('/', function () {
+// return view('welcome');
+// })->name('home');
 
 
 Route::get('/index',[AuthController::class,'index'])->name('login');

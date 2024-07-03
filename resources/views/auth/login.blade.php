@@ -29,7 +29,7 @@
           class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
       </div>
       <div class="col-lg-8">
-        
+
 
       @if (session()->has ('success'))
       <div class= "alert alert-success">{{ session()-> get("success") }}</div>
